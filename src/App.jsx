@@ -1,14 +1,10 @@
 import "./App.css";
-import "../public/images/Perfil.jpg";
-import "../public/icons/GitHub.svg";
-import "../public/icons/LinkedIn.svg";
-import "../public/icons/Instagram.svg";
-import "../public/icons/envelope.svg";
-import "../public/icons/GitHub.svg";
-import "../public/icons/Instagram.svg";
-import "../public/icons/LinkedIn.svg";
-import "../public/icons/Whatsapp.svg";
-import Button from "./components/Button";
+import Perfil from "../public/images/Perfil.jpg";
+import GitHub from "../public/icons/GitHub.svg";
+import LinkedIn from "../public/icons/LinkedIn.svg";
+import Instagram from "../public/icons/Instagram.svg";
+import Envelope from "../public/icons/envelope.svg";
+import Whatsapp from "../public/icons/Whatsapp.svg";
 
 import { useState } from "react";
 
@@ -17,6 +13,8 @@ function App() {
   const ToggleMode = () => {
     setMode(!active);
   };
+
+  const name = 'React';
 
   var root = document.documentElement;
   root.className += " js";
@@ -63,31 +61,31 @@ function App() {
 
       <main className="container-main">
         <section className="container-apresentation">
-          <img src="../public/images/Perfil.jpg" className="perfil" />
+          <img src={Perfil} className="perfil" />
           <div className="content-apresentation">
             <h1>Elias Santos</h1>
-            <p>Desenvolvedor Front-end</p>
+            <p>Desenvolvedor Front-end {name}</p>
             <p>Site Construido em React</p>
           </div>
           <div className="icons">
             <a href="https://github.com/Dolias18" target="_blank">
-              <img src="../public/icons/GitHub.svg" />
+              <img src={GitHub} />
             </a>
             <a href="https://www.instagram.com/eliass20002/" target="_blank">
-              <img src="../public/icons/Instagram.svg" />
+              <img src={Instagram} />
             </a>
             <a
               href="https://www.linkedin.com/in/elias-santos-6626501a8/"
               target="_blank"
             >
-              <img src="../public/icons/LinkedIn.svg" />
+              <img src={LinkedIn} />
             </a>
           </div>
         </section>
         <section className="about-me anime">
           <div className="container-about">
             <img
-              src="../public/images/Perfil.jpg"
+              src={Perfil}
               className="perfil"
               alt="Perfil"
             />
@@ -111,31 +109,31 @@ function App() {
               </div>
               <div className="Container-buttons">
                 <a href="https://github.com/Dolias18" target="_blank">
-                  <img src="../public/icons/GitHub.svg" />
+                  <img src={GitHub} />
                 </a>
                 <a
                   href="https://www.instagram.com/eliass20002/"
                   target="_blank"
                 >
-                  <img src="../public/icons/Instagram.svg" />
+                  <img src={Instagram} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/elias-santos-6626501a8/"
                   target="_blank"
                 >
-                  <img src="../public/icons/LinkedIn.svg" />
+                  <img src={LinkedIn} />
                 </a>
                 <a
                   href="https://api.whatsapp.com/send?phone=5511964150195&text=Ola%C2%B4Vim%20pelo%20seu%20portf%C3%B3lio."
                   target="_blank"
                 >
-                  <img src="../public/icons/Whatsapp.svg" />
+                  <img src={Whatsapp} />
                 </a>
                 <a
                   href="https://criarmeulink.com.br/u/1697033977"
                   target="_blank"
                 >
-                  <img src="../public/icons/envelope.svg" />
+                  <img src={Envelope} />
                 </a>
               </div>
             </div>
