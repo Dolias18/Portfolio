@@ -9,8 +9,8 @@
 }
 html, body{
     height: 100%;
-    background: rgb(0,17,32);
     background: linear-gradient(27deg, rgba(0,17,32,1) 0%, rgba(0,17,32,1) 59%, rgba(0,36,68,1) 100%);
+    background-repeat: no-repeat;
     scroll-behavior: smooth;
 }
 
@@ -48,18 +48,30 @@ html, body{
         background-color: white;
         transition: 0.5s;
     }
+    .header-container{
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+
+        background: linear-gradient(27deg, rgba(0,17,32,1) 0%, rgba(0,17,32,1) 59%, rgba(0,36,68,1) 100%);
+        background-repeat: no-repeat;
+    }
 
     .content-text ul{
         flex-direction: column;
         text-align: right;
         padding-top: 40px;
-        z-index: 1;
+        z-index: 10;
     }
 
     .icon.iconActive .hamburguer{
         background-color: transparent;
         transition: 0.5s;
         z-index: 2;
+    }
+    .icon.iconActive > main:hover{
+        
+        filter: blur(50px);
     }
 
     .icon.iconActive .hamburguer:after{
@@ -86,12 +98,12 @@ html, body{
     .menu.menuClose{
         display: none;
     }
-    .logo h1:before{
+    .logo a:before{
         content: 'ES';
         visibility: visible;
-        padding: 5px;
+        margin: 5px;
     }
-    .logo h1{
+    .logo a{
         visibility: hidden;
     }
 
