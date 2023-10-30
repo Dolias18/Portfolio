@@ -137,18 +137,75 @@
 .experience{
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 32px 0 32px;
+}
+.circle{
+    background-color: blue;
+    border-radius: 100%;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    right: 85%;
 }
 .card{
     background: rgba(44, 44, 44, 0.46);
     border-radius: 16px;
-    box-shadow: 0 8px 70px rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(7.5px);
+    backdrop-filter: blur(17.5px);
     -webkit-backdrop-filter: blur(7.5px);
     border: 1px solid rgba(116, 116, 116, 0.33);
     border-radius: 20px;
-    width: 80%;
-    height: calc(80vh - 100px);
+    width: 35%;
+    height: 300px;
+    padding: 5%;
     color: white;
+    display: flex;
+    align-items: center;
+}
+.list-xp button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid rgb(70, 69, 69);
+    font-size: 25px;
+    transition: 0.2s;
+    margin-bottom: 25px;
+}
+.list-xp button:hover{
+    border-left: 4px solid white;
+    padding-left: 7px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.card-visibility{
+    background: rgba(44, 44, 44, 0.46);
+    border-radius: 16px;
+    backdrop-filter: blur(17.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border: 1px solid rgba(116, 116, 116, 0.33);
+    border-radius: 20px;
+    width: 62%;
+    height: 300px;
+    color: white;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+.container-xp{
+    display: flex;
+    flex-direction: column;
+}
+.container-xp div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card1.menuClose{
+    display: none;
+}
+.card2.menuClose{
+    display: none;
 }

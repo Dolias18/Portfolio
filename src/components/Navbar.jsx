@@ -9,7 +9,6 @@ function Navbar() {
     setMode(!active);
   };
 
-
   function boxTop(idBox) {
     var boxOffset = $(idBox).offset().top;
     return boxOffset;

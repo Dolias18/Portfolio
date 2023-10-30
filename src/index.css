@@ -69,10 +69,6 @@ html, body{
         transition: 0.5s;
         z-index: 2;
     }
-    .icon.iconActive > main:hover{
-        
-        filter: blur(50px);
-    }
 
     .icon.iconActive .hamburguer:after{
         top: 0;
